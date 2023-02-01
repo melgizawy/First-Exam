@@ -1,0 +1,192 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em)
+{
+  .hero
+  {
+    max-width: 120rem;
+  }
+
+  .heading-primary
+  {
+    font-size: 4.4rem;
+  }
+
+  .features-1
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video
+  {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid--pricing
+  {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--footer
+  {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em)
+{
+  .grid
+  {
+    row-gap: 4.8rem;
+    column-gap: 2.4rem !important;
+  }
+
+  .container
+  {
+    padding: 0;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols,
+  .hero,
+  .about,
+  .video,
+  .testimonials,
+  .grid--footer
+  {
+    grid-template-columns: 1fr;
+  }
+
+
+  .section-hero
+  {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero
+  {
+    padding: 0 3.2rem;
+    max-width: 50rem;
+
+  }
+
+  .hero-img
+  {
+    width: 60%;
+    justify-self: end;
+  }
+
+  .features-1-heading-box
+  {
+    display: block;
+  }
+
+  .section-about
+  {
+    padding: 0 0 3.6rem;
+    margin: 0;
+  }
+
+  .features-2-img
+  {
+    width: 100%;
+  }
+
+  .arrows-download
+  {
+    display: none;
+  }
+
+  .section-testimonials
+  {
+    margin: 0;
+  }
+
+  .testimonials
+  {
+    padding: 0;
+  }
+
+  .section-download
+  {
+    padding: 0;
+  }
+
+  .heading-platforms
+  {
+    font-size: 1.8rem;
+  }
+
+  .second-row
+  {
+    margin: 0;
+  }
+
+  .logos-row img
+  {
+    height: 6.3rem;
+    padding: 1.8rem;
+  }
+
+  .grid--footer
+  {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-col,
+  .nav-col ul,
+  .address-col,
+  .grid-adress
+  {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-heading
+  {
+    text-align: center;
+  }
+
+  .nav-col-full
+  {
+    display: block;
+  }
+
+
+  element.style
+  {}
+
+  .btn--full:link,
+  .btn--full:visited
+  {
+    background-color: #ff3e66;
+    color: #fff;
+  }
+
+  .btn:link,
+  .btn:visited
+  {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .download-buttons
+  {
+    display: inline-block;
+    margin: 0 0 2.4rem 0;
+  }
+}
